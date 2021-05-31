@@ -1,3 +1,7 @@
+
+# LINEAR REGRESSION TEMPLATE
+# Change dataset source & values as needed
+
 import numpy as np
 import matplotlib.pyplot as plt
 import pandas as pd

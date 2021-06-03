@@ -21,7 +21,27 @@
 17. Select % columns then -> Insert -> Chart -> Simple Line Graph
 18. This is the END of Testing the Model and viewing its CAP
 19. Compare both CAPs
-20. Repeat earlier steps as needed if accuracy is below 60% or above 90%, 70s to 80s are ideal and ready for full presentation
+20. Repeat earlier steps as needed if accuracy is below 60% or above 90%
+
+
+
+-- How to Determine Model Accuracy --
+
+90% to 100% = Too Good, it may be overfitted with correlating variables, poor sampling or include Training data.
+
+80% to 90% = Very Good, something of a rarity and needs to be re-confirmed just in case.
+
+70% to 80% = Good, this range is ideal and as in line with normal findings.
+
+60% to 70% = Poor, this is sub-standard and may yield a positive result though its impact is not as great.
+
+Below 60% = Trash, throw it out and go through the Training process again.
+
+
+
+-- How to Determine Model Effectiveness --
+
+Look at the predicted accuracy percent % when the average slope reaches 50%.
 
 
 

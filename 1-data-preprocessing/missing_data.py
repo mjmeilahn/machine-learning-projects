@@ -3,9 +3,15 @@ import numpy as np
 import matplotlib.pyplot as plt
 import pandas as pd
 
-# Importing the dataset
+# Import the dataset
 dataset = pd.read_csv('Data.csv')
-X = dataset.iloc[:, :-1].values
+
+# Below code assumes Depedent Variable is in the last column
+
+# Independent Variables "Country, Age, Salary" values as indexes
+x = dataset.iloc[:, :-1].values
+
+# Dependent Variable "Purchased" values as indexes
 y = dataset.iloc[:, 3].values
 
 # Taking care of missing data

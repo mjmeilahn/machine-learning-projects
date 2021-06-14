@@ -47,7 +47,7 @@ Look at the predicted accuracy percent % when the average slope reaches 50%.
 
 -- Repo Projects --
 
-1. Data Preprocessing - Basics of importing data, filling in empty values, split observations between test and training groups. Feature scaling applied to normalize model.
+1. Data Preprocessing - Basics of importing data, filling in empty values with averages, split observations between test and training groups. Feature scaling applied to normalize model.
 
 -- Below Regressions are modeled through Ordinary Least Squares --
 

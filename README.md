@@ -3,10 +3,10 @@
 ## Manual Data Prediction (before ML)
 
 1. Take a large set of data.
-2. Identify the numerical or logical dependent variable you want to predict.
+2. Identify the numerical or logistic dependent variable you want to predict.
 3. Split the sample size 50/50 or 70/30.
 4. The larger split is used for training the model - the smaller for testing the model.
-5. Train the model through Linear or Logical Regression - see repo projects below.
+5. Train the model through Linear or Logistic Regression - see repo projects below.
 6. (Gretl) Model window -> Analysis -> Forecasts -> Add To Dataset / Plus Icon -> Name variable as "P-Hat" or [variable]-Hat -> Export Data -> Choose ID, Dependent Variable, newly created P-Hat -> Export CSV
 7. (Google Sheets) Open CSV export and sort rows by highest P-Hat value
 8. (Google Sheets) Open Cumulative Accuracy Profile (CAP) Template, DUPLICATE and fill-in values from CSV export after sorting highest P-Hat value
@@ -57,4 +57,4 @@ Look at the predicted accuracy percent % when the average slope reaches 50%.
 
 ### Below Regressions are modeled through Limited Dependent Variable -> Logit -> Binary
 
-4. Logical Regression (Outcome is Binary) - Same method to remove insignificant variables from the model through Backward Elimination (start with many variables) to remove any variable above 0.05 P-Value (re-running model after each removal) to reach high Adjusted R-Squared value. Predicting a lone dependent variable (like whether someone closed an account / binary). Categorical variables (like Region or Gender) are treated as dummies and remove at least one dummy variable from a respective category (like omitting Female dummy variable if we select Male in the model) to avoid the correlation trap. Coefficients need to be weighted under E Value calculation i.e. exponent of E. See Google Sheet for example and Heatmap for presentation.
+4. Logistic Regression (Outcome is Binary) - Same method to remove insignificant variables from the model through Backward Elimination (start with many variables) to remove any variable above 0.05 P-Value (re-running model after each removal) to reach high Adjusted R-Squared value. Predicting a lone dependent variable (like whether someone closed an account / binary). Categorical variables (like Region or Gender) are treated as dummies and remove at least one dummy variable from a respective category (like omitting Female dummy variable if we select Male in the model) to avoid the correlation trap. Coefficients need to be weighted under E Value calculation i.e. exponent of E. See Google Sheet for example and Heatmap for presentation.

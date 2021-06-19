@@ -1,23 +1,25 @@
-# Data Preprocessing Template
 
-# Importing the libraries
-import numpy as np
-import matplotlib.pyplot as plt
 import pandas as pd
 
-# Importing the dataset
-dataset = pd.read_csv('Data.csv')
-X = dataset.iloc[:, :-1].values
-y = dataset.iloc[:, 3].values
+# PURPOSE IS TO PREDICT SALARY
 
-# Splitting the dataset into the Training set and Test set
+# This example dataset assumes that "Years of Experience"
+# is the leading cause of Salary and has not gone
+# through an optimized process regarding P-values or Adj. R-Squared
+
+# Import the dataset
+dataset = pd.read_csv('Salary_Data.csv')
+
+# Below code assumes Depedent Variable is in the last column
+
+# Independent Variable "Years of Experience" values as matrix
+x = dataset.iloc[:, :-1].values
+# print(x)
+
+# Dependent Variable "Salary" values as matrix
+y = dataset.iloc[:, -1].values
+# print(y)
+
+# Split data into Training Model & Test Model
 from sklearn.cross_validation import train_test_split
-X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = 0.2, random_state = 0)
-
-# Feature Scaling
-"""from sklearn.preprocessing import StandardScaler
-sc_X = StandardScaler()
-X_train = sc_X.fit_transform(X_train)
-X_test = sc_X.transform(X_test)
-sc_y = StandardScaler()
-y_train = sc_y.fit_transform(y_train)"""
+x_train, x_test, y_train, y_test = train_test_split(x, y, test_size = 0.2, random_state = 0)

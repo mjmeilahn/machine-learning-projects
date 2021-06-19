@@ -1,21 +1,22 @@
 
-import numpy as np
-import matplotlib.pyplot as plt
 import pandas as pd
 
-# Importing the dataset
-dataset = pd.read_csv('Data.csv')
-X = dataset.iloc[:, :-1].values
-y = dataset.iloc[:, 3].values
+# PURPOSE IS TO PREDICT PROFIT
 
-# Splitting the dataset into the Training set and Test set
-from sklearn.cross_validation import train_test_split
-X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = 0.2, random_state = 0)
+# This example dataset assumes that "R&D Spend, Administration...
+# Marketing Spend and State" are the leading cause of Profit
+# and has not gone through an optimized variable selection process
 
-# Feature Scaling
-"""from sklearn.preprocessing import StandardScaler
-sc_X = StandardScaler()
-X_train = sc_X.fit_transform(X_train)
-X_test = sc_X.transform(X_test)
-sc_y = StandardScaler()
-y_train = sc_y.fit_transform(y_train)"""
+# Import the dataset
+dataset = pd.read_csv('50_Startups.csv')
+
+# Below code assumes Depedent Variable is in the last column
+
+# Independent Variables "R&D Spend, Administration...
+# Marketing Spend, State" values as matrix
+x = dataset.iloc[:, :-1].values
+# print(x)
+
+# Dependent Variable "Profit" values as matrix
+y = dataset.iloc[:, 4].values
+# print(y)

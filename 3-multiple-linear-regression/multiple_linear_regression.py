@@ -1,41 +1,46 @@
-# Multiple Linear Regression
 
-# Importing the libraries
-import numpy as np
-import matplotlib.pyplot as plt
+
 import pandas as pd
+import numpy as np
 
-# Importing the dataset
+# PURPOSE IS TO PREDICT PROFIT
+
+# This example dataset assumes that "R&D Spend, Administration...
+# Marketing Spend and State" are the leading cause of Profit
+# and has not gone through an optimized variable selection process
+
+# Import the dataset
 dataset = pd.read_csv('50_Startups.csv')
-X = dataset.iloc[:, :-1].values
+
+# Below code assumes Depedent Variable is in the last column
+
+# Independent Variables "R&D Spend, Administration...
+# Marketing Spend, State" values as matrix
+x = dataset.iloc[:, :-1].values
+# print(x)
+
+# Dependent Variable "Profit" values as matrix
 y = dataset.iloc[:, 4].values
+# print(y)
 
-# Encoding categorical data
-from sklearn.preprocessing import LabelEncoder, OneHotEncoder
-labelencoder = LabelEncoder()
-X[:, 3] = labelencoder.fit_transform(X[:, 3])
-onehotencoder = OneHotEncoder(categorical_features = [3])
-X = onehotencoder.fit_transform(X).toarray()
+# Make Dummy variables from "State" i.e. "3" in "x" dataset
+# ColumnTransformer takes care of Dummy Variable Trap in categorical variables
+from sklearn.compose import ColumnTransformer
+from sklearn.preprocessing import OneHotEncoder
+ct = ColumnTransformer(transformers=[('encoder', OneHotEncoder(), [3])], remainder='passthrough')
+x = np.array(ct.fit_transform(x))
+# print(x)
 
-# Avoiding the Dummy Variable Trap
-X = X[:, 1:]
+# Split data into Training Model & Test Model
+from sklearn.model_selection import train_test_split
+x_train, x_test, y_train, y_test = train_test_split(x, y, test_size = 0.2, random_state = 0)
 
-# Splitting the dataset into the Training set and Test set
-from sklearn.cross_validation import train_test_split
-X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = 0.2, random_state = 0)
-
-# Feature Scaling
-"""from sklearn.preprocessing import StandardScaler
-sc_X = StandardScaler()
-X_train = sc_X.fit_transform(X_train)
-X_test = sc_X.transform(X_test)
-sc_y = StandardScaler()
-y_train = sc_y.fit_transform(y_train)"""
-
-# Fitting Multiple Linear Regression to the Training set
+# Fit Multiple Linear Regression to the Training Model
 from sklearn.linear_model import LinearRegression
 regressor = LinearRegression()
-regressor.fit(X_train, y_train)
+regressor.fit(x_train, y_train)
 
-# Predicting the Test set results
-y_pred = regressor.predict(X_test)
+# Predict the Test Model results
+y_pred = regressor.predict(x_test)
+np.set_printoptions(precision=2) # more accurate for decimals
+print(np.concatenate((y_pred.reshape(len(y_pred), 1), y_test.reshape(len(y_test), 1)), axis=1))

@@ -15,11 +15,11 @@ dataset = pd.read_csv('50_Startups.csv')
 # Below code assumes Depedent Variable is in the last column
 
 # Independent Variables "R&D Spend, Administration...
-# Marketing Spend, State" values as matrix
+# Marketing Spend, State" values as array
 x = dataset.iloc[:, :-1].values
 # print(x)
 
-# Dependent Variable "Profit" values as matrix
+# Dependent Variable "Profit" values as array
 y = dataset.iloc[:, -1].values
 # print(y)
 

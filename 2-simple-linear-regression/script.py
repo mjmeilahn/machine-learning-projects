@@ -13,11 +13,11 @@ dataset = pd.read_csv('Salary_Data.csv')
 
 # Below code assumes Depedent Variable is in the last column
 
-# Independent Variable "Years of Experience" values as matrix
+# Independent Variable "Years of Experience" values as array
 x = dataset.iloc[:, :-1].values
 # print(x)
 
-# Dependent Variable "Salary" values as matrix
+# Dependent Variable "Salary" values as array
 y = dataset.iloc[:, -1].values
 # print(y)
 

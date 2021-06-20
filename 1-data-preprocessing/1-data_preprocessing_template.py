@@ -12,10 +12,10 @@ dataset = pd.read_csv('Data.csv')
 
 # Below code assumes Depedent Variable is in the last column
 
-# Independent Variables "Country, Age, Salary" values as matrix
+# Independent Variables "Country, Age, Salary" values as array
 x = dataset.iloc[:, :-1].values
 # print(x)
 
-# Dependent Variable "Purchased" values as matrix
+# Dependent Variable "Purchased" values as array
 y = dataset.iloc[:, 3].values
 # print(y)

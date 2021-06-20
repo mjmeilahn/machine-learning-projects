@@ -1,5 +1,23 @@
 # Machine Learning Projects
 
+# TODO: Create EXTRA Jupyter Notebook versions of projects
+
+## Repo Projects
+
+1. Data Preprocessing - Basics of importing data, filling in empty values with averages, split observations between test and training groups. Feature scaling applied to normalize model.
+
+### NOTE: sklearn library handles Backward Elimination process for us
+
+2. Simple Linear Regression - Predicts Salary based on Years of Experience.
+
+3. Multiple Linear Regression - Predicts Profit based on R&D Spend, Administration, Marketing Spend and State.
+
+4. Polynomial Regression - Predicts Salary based on a unique ID or Job Title.
+
+5. Logistic Regression - Predicts Purchase Rate based on Age and Estimated Salary.
+
+
+
 ## Manual Data Prediction (before ML)
 
 1. Take a large set of data.
@@ -47,26 +65,12 @@ Look at the predicted accuracy percent % when the average slope reaches 50%.
 
 ### (Before ML) Below Regressions are modeled through Ordinary Least Squares
 
-Simple Linear Regression (Outcome is numerical) - Requires at least one dependent variable (like Salary) to predict and one independent variable (like Years of Experience) and a constant (starting point like zero). If we assume this data-relationship is linear - chart is visualized as a linear graph either upwards or downwards with various points of observations. Formula is Y = MX + B. Various tools exist outside of Python to visualize like R, GRETL or a general SAS product. The higher amount of observations lead to a lower P-Value to predict significance.
+Simple Linear Regression (Outcome is numerical) - Requires one dependent variable (like Salary) to predict and one independent variable (like Years of Experience) and a constant (starting point like zero). If we assume this data-relationship is linear - chart is visualized as a linear graph either upwards or downwards with various points of observations. Formula is Y = MX + B. Various tools exist outside of Python to visualize like R, GRETL or a general SAS product. The higher amount of observations lead to a lower P-Value to predict significance.
 
-Polynomial Regression (Outcome is numerical) - Requires at least one dependent variable (like Salary) to predict and one independent variable (like Years of Experience) and a constant (starting point like zero). If we assume this data-relationship is non-linear - chart is visualized as an exponential line graph either upwards or downwards with various points of observations. Formula is Y = MX + MX**2 + B. Various tools exist outside of Python to visualize like R, GRETL or a general SAS product. The higher amount of observations lead to a lower P-Value to predict significance.
+Polynomial Regression (Outcome is numerical) - Requires one dependent variable (like Salary) to predict and one independent variable (like Years of Experience) and a constant (starting point like zero). If we assume this data-relationship is non-linear - chart is visualized as an exponential line graph either upwards or downwards with various points of observations. Formula is Y = MX + MX**2 + B. Various tools exist outside of Python to visualize like R, GRETL or a general SAS product. The higher amount of observations lead to a lower P-Value to predict significance.
 
 Multiple Linear Regression (Outcome is numerical) - Eliminating insignificant variables from the model through Backward Elimination (start with many variables) to remove any variable above 0.05 P-Value (re-running model after each removal) to reach high Adjusted R-Squared value. Predicting a lone dependent variable (like Profit). Categorical variables (like State or Gender) are treated as dummies and remove at least one dummy variable from a respective category (like omitting Female dummy variable if we select Male in the model) to avoid the correlation trap. Coefficients are weighted as per unit measure unless the same rate of measure applies across all variables.
 
 ### (Before ML) Logistic Regressions are modeled through Limited Dependent Variable -> Logit -> Binary
 
 Logistic Regression (Outcome is Binary) - Same method to remove insignificant variables from the model through Backward Elimination (start with many variables) to remove any variable above 0.05 P-Value (re-running model after each removal) to reach high Adjusted R-Squared value. Predicting a lone dependent variable (like whether someone closed an account / binary). Categorical variables (like Region or Gender) are treated as dummies and remove at least one dummy variable from a respective category (like omitting Female dummy variable if we select Male in the model since Male will become binary as a result of becoming a dummy variable - same goes for any Categorical variable) to avoid the correlation trap. Coefficients need to be weighted under E Value calculation i.e. exponent of E. See Google Sheet for example and Heatmap for presentation.
-
-
-
-## Repo Projects
-
-1. Data Preprocessing - Basics of importing data, filling in empty values with averages, split observations between test and training groups. Feature scaling applied to normalize model.
-
-### NOTE: sklearn library handles Backward Elimination process for us
-
-2. Simple Linear Regression - Predicts Salary based on Years of Experience.
-
-3. Multiple Linear Regression - Predicts Profit based on R&D Spend, Administration, Marketing Spend and State.
-
-4. Polynomial Regression - Predicts Salary based on a unique ID or Job Title.

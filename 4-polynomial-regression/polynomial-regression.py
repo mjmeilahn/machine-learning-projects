@@ -17,12 +17,12 @@ dataset = pd.read_csv('Position_Salaries.csv')
 
 # Below code assumes Depedent Variable is in the last column
 
-# Independent variable "Job ID" values as matrix
+# Independent variable "Job ID" values as array
 # Target everything except the last column AND the first column
 x = dataset.iloc[:, 1:-1].values
 # print(x)
 
-# Dependent variable "Salary" values as matrix
+# Dependent variable "Salary" values as array
 y = dataset.iloc[:, -1].values
 # print(y)
 

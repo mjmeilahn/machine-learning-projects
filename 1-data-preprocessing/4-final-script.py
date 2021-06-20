@@ -12,11 +12,11 @@ dataset = pd.read_csv('Data.csv')
 
 # Below code assumes Depedent Variable is in the last column
 
-# Independent Variables "Country, Age, Salary" values as matrix
+# Independent Variables "Country, Age, Salary" values as array
 x = dataset.iloc[:, :-1].values
 # print(x)
 
-# Dependent Variable "Purchased" values as matrix
+# Dependent Variable "Purchased" values as array
 y = dataset.iloc[:, 3].values
 # print(y)
 
@@ -54,7 +54,7 @@ x_train, x_test, y_train, y_test = train_test_split(x, y, test_size = 0.2, rando
 # To avoid overfitting the Training Model
 
 # Feature Scaling is not applicable to all Machine Learning
-# For instance Multiple Linear Regression, Polynomial Regression
+# Such as categorical variables
 
 from sklearn.preprocessing import StandardScaler
 sc_x = StandardScaler()

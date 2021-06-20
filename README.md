@@ -47,7 +47,9 @@ Look at the predicted accuracy percent % when the average slope reaches 50%.
 
 ### (Before ML) Below Regressions are modeled through Ordinary Least Squares
 
-Simple Linear Regression (Outcome is numerical) - Requires at least one dependent variable (like Salary) to predict and one independent variable (like Years of Experience) and a constant (starting point like zero). Chart is visualized as a linear graph either upwards or downwards with various points of observations. Formula is Y = MX + B. Various tools exist outside of Python to visualize like R, GRETL or a general SAS product. The higher amount of observations lead to a lower P-Value to predict significance.
+Simple Linear Regression (Outcome is numerical) - Requires at least one dependent variable (like Salary) to predict and one independent variable (like Years of Experience) and a constant (starting point like zero). If we assume this data-relationship is linear - chart is visualized as a linear graph either upwards or downwards with various points of observations. Formula is Y = MX + B. Various tools exist outside of Python to visualize like R, GRETL or a general SAS product. The higher amount of observations lead to a lower P-Value to predict significance.
+
+Polynomial Regression (Outcome is numerical) - Requires at least one dependent variable (like Salary) to predict and one independent variable (like Years of Experience) and a constant (starting point like zero). If we assume this data-relationship is non-linear - chart is visualized as an exponential line graph either upwards or downwards with various points of observations. Formula is Y = MX + MX**2 + B. Various tools exist outside of Python to visualize like R, GRETL or a general SAS product. The higher amount of observations lead to a lower P-Value to predict significance.
 
 Multiple Linear Regression (Outcome is numerical) - Eliminating insignificant variables from the model through Backward Elimination (start with many variables) to remove any variable above 0.05 P-Value (re-running model after each removal) to reach high Adjusted R-Squared value. Predicting a lone dependent variable (like Profit). Categorical variables (like State or Gender) are treated as dummies and remove at least one dummy variable from a respective category (like omitting Female dummy variable if we select Male in the model) to avoid the correlation trap. Coefficients are weighted as per unit measure unless the same rate of measure applies across all variables.
 
@@ -66,3 +68,5 @@ Logistic Regression (Outcome is Binary) - Same method to remove insignificant va
 2. Simple Linear Regression - Predicts Salary based on Years of Experience.
 
 3. Multiple Linear Regression - Predicts Profit based on R&D Spend, Administration, Marketing Spend and State.
+
+4. Polynomial Regression - Predicts Salary based on a unique ID or Job Title.

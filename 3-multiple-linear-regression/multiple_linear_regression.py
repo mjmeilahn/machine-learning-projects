@@ -20,7 +20,7 @@ x = dataset.iloc[:, :-1].values
 # print(x)
 
 # Dependent Variable "Profit" values as matrix
-y = dataset.iloc[:, 4].values
+y = dataset.iloc[:, -1].values
 # print(y)
 
 # Make Dummy variables from "State" i.e. "3" in "x" dataset
@@ -43,4 +43,29 @@ regressor.fit(x_train, y_train)
 # Predict the Test Model results
 y_pred = regressor.predict(x_test)
 np.set_printoptions(precision=2) # more accurate for decimals
-print(np.concatenate((y_pred.reshape(len(y_pred), 1), y_test.reshape(len(y_test), 1)), axis=1))
+predictions = np.concatenate((y_pred.reshape(len(y_pred), 1), y_test.reshape(len(y_test), 1)), axis=1)
+print('Predicted vs. Actual')
+print(predictions)
+
+# Assign predicted & actual values into lists
+predicted = []
+actual = []
+
+for i in predictions:
+    predicted.append(i[0])
+    actual.append(i[1])
+
+# Export results as CSV
+from os import getcwd
+currentDir = getcwd()
+df = pd.DataFrame({'Predicted': predicted, 'Actual': actual})
+csv = df.to_csv(currentDir + '/1-results.csv', index=False)
+
+# Export correlations to prevent false positives/negatives as CSV
+corr = pd.DataFrame(dataset.corr())
+csv = corr.to_csv(currentDir + '/2-correlations.csv', index=False)
+
+# Export coefficients that were used as CSV
+coefficients = list(zip(dataset.iloc[:, :-1].columns, regressor.coef_))
+coeff = pd.DataFrame(coefficients, columns=['Variable', 'Coefficient'])
+csv = coeff.to_csv(currentDir + '/3-coefficients.csv', index=False)

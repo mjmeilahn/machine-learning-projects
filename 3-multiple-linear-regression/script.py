@@ -67,5 +67,5 @@ csv = corr.to_csv(currentDir + '/2-correlations.csv', index=False)
 
 # Export coefficients that were used as CSV
 coefficients = list(zip(dataset.iloc[:, :-1].columns, regressor.coef_))
-coeff = pd.DataFrame(coefficients, columns=['Label', 'Coefficient'])
+coeff = pd.DataFrame(coefficients, columns=['Variable', 'Coefficient'])
 csv = coeff.to_csv(currentDir + '/3-coefficients.csv', index=False)

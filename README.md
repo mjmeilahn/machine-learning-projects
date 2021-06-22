@@ -20,6 +20,8 @@
 
 7. Support Vector Machine (SVM) - Predicts Purchase Rate (Y/N) based on Age and Estimated Salary. Yes/No are defined by equal distances of closest polar opposite data points belonging to Yes or No respectively. Visually this can appear as a straight line between Yes/No and may mimic a Logistic Regression.
 
+8. Kernel SVM - TBD
+
 
 
 ## Manual Data Prediction (before ML)
@@ -88,3 +90,5 @@ Logistic Regression (Outcome is Binary) - Same method to remove insignificant va
 K-Nearest Neighbors (K-NN) where outcome is Binary - Same as Logistic Regression but its Training & Test Models have a more flexible line of separation between Yes/No. Depends entirely on the dataset and the correlation between relationships.
 
 Support Vector Machine (SVM) where outcome is Binary - Same as Logistic Regression but its margin between Yes/No are defined by equal distances of closest polar opposite data points belonging to Yes or No respectively. Visually this can appear as a straight line between Yes/No and may mimic a Logistic Regression.
+
+Kernel SVM (Outcome is Binary) - TBD

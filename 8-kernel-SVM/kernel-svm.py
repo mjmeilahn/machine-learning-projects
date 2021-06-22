@@ -37,9 +37,9 @@ scaler = StandardScaler()
 x_train = scaler.fit_transform(x_train)
 x_test = scaler.transform(x_test)
 
-# Fit the Training Model on SVM
+# Fit the Training Model on Kernel SVM
 from sklearn.svm import SVC
-classifier = SVC(kernel='', random_state=0)
+classifier = SVC(kernel='rbf', random_state=0)
 classifier.fit(x_train, y_train)
 
 # Predict one new result

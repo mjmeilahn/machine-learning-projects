@@ -14,7 +14,9 @@
 
 4. Polynomial Regression - Predicts Salary based on a unique ID or Job Title.
 
-5. Logistic Regression - Predicts Purchase Rate based on Age and Estimated Salary.
+5. Logistic Regression - Predicts Purchase Rate (Y/N) based on Age and Estimated Salary.
+
+6. K-NN (K-Nearest Neighbors) - Predicts Purchase Rate (Y/N) based on Age and Estimated Salary. Closest distances to data points become classified under K-NN algorithm.
 
 
 
@@ -74,3 +76,5 @@ Multiple Linear Regression (Outcome is numerical) - Eliminating insignificant va
 ### (Before ML) Logistic Regressions are modeled through Limited Dependent Variable -> Logit -> Binary
 
 Logistic Regression (Outcome is Binary) - Same method to remove insignificant variables from the model through Backward Elimination (start with many variables) to remove any variable above 0.05 P-Value (re-running model after each removal) to reach high Adjusted R-Squared value. Predicting a lone dependent variable (like whether someone closed an account / binary). Categorical variables (like Region or Gender) are treated as dummies and remove at least one dummy variable from a respective category (like omitting Female dummy variable if we select Male in the model since Male will become binary as a result of becoming a dummy variable - same goes for any Categorical variable) to avoid the correlation trap. Coefficients need to be weighted under E Value calculation i.e. exponent of E. See Google Sheet for example and Heatmap for presentation.
+
+K-NN (K-Nearest Neighbors) where outcome is Binary - Same as Logistic Regression but its Training & Test Models have a more flexible (and accurate) line of separation between Yes/No. Depends entirely on the dataset and the correlation between relationships. A binary prediction should include both Logistic & K-NN.

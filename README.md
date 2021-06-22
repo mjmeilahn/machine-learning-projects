@@ -1,7 +1,5 @@
 # Machine Learning Projects
 
-# TODO: Create EXTRA Jupyter Notebook versions of projects
-
 ## Repo Projects
 
 1. Data Preprocessing - Basics of importing data, filling in empty values with averages, split observations between test and training groups. Feature scaling applied to normalize model.
@@ -21,6 +19,10 @@
 8. Kernel SVM - Same as normal SVM except its boundary line of separation appears as a non-linear curve for data that do not have a linear Yes/No relationship. Predicts Purchase Rate (Y/N) based on Age and Estimated Salary.
 
 9. Support Vector Regression (SVR) - A hyperplane (or tube shaped object) is fitted to a linear plot where data points within the hyperplane are disregarded as "errors" and act instead as a buffer or range. Values outside of this hyperplane become support vectors and shape the regression line.
+
+
+
+# TODO: Create EXTRA Jupyter Notebook versions of projects
 
 
 

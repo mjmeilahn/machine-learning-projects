@@ -6,15 +6,11 @@
 
 1. Data Preprocessing - Basics of importing data, filling in empty values with averages, split observations between test and training groups. Feature scaling applied to normalize model.
 
-### Models that Predict Numerical Values
-
 2. Simple Linear Regression - Predicts Salary based on Years of Experience.
 
 3. Multiple Linear Regression - Predicts Profit based on R&D Spend, Administration, Marketing Spend and State.
 
 4. Polynomial Regression - Predicts Salary based on a unique ID or Job Title.
-
-### Models that Predict Binary Values
 
 5. Logistic Regression - Predicts Purchase Rate (Y/N) based on Age and Estimated Salary.
 
@@ -22,7 +18,9 @@
 
 7. Support Vector Machine (SVM) - Predicts Purchase Rate (Y/N) based on Age and Estimated Salary. Yes/No are defined by equal distances of closest polar opposite data points belonging to Yes or No respectively. Visually this can appear as a straight line between Yes/No and may mimic a Logistic Regression but the nearest opposing data points define the boundary line.
 
-8. Kernel SVM - Same as normal SVM except its boundary line of separation appears as a non-linear curve. Predicts Purchase Rate (Y/N) based on Age and Estimated Salary.
+8. Kernel SVM - Same as normal SVM except its boundary line of separation appears as a non-linear curve for data that do not have a linear Yes/No relationship. Predicts Purchase Rate (Y/N) based on Age and Estimated Salary.
+
+9. Support Vector Regression (SVR) - A hyperplane (or tube shaped object) is fitted to a linear plot where data points within the hyperplane are disregarded as "errors" and act instead as a buffer or range. Values outside of this hyperplane become support vectors and shape the regression line.
 
 
 
@@ -32,7 +30,7 @@
 
 80% to 90% = Very Good, something of a rarity and needs to be re-confirmed just in case.
 
-70% to 80% = Good, this range is ideal and as in line with normal findings.
+70% to 80% = Good, this range is ideal and is in line with industry standards.
 
 60% to 70% = Poor, this is sub-standard and may yield a positive result though its impact is not as great.
 
@@ -60,7 +58,9 @@ K-Nearest Neighbors (K-NN) where outcome is Binary - Same as Logistic Regression
 
 Support Vector Machine (SVM) where outcome is Binary - Same as Logistic Regression but its margin between Yes/No are defined by equal distances of closest polar opposite data points belonging to Yes or No respectively. Visually this can appear as a straight line between Yes/No and may mimic a Logistic Regression.
 
-Kernel SVM (Outcome is Binary) - Same as normal SVM except its boundary line of separation appears as a non-linear curve.
+Kernel SVM (Outcome is Binary) - Same as normal SVM except its boundary line of separation appears as a non-linear curve for data that do not have a linear Yes/No relationship.
+
+Support Vector SVR (SVR) - A hyperplane (or tube shaped object) is fitted to a linear plot where data points within the hyperplane are disregarded as "errors" and act instead as a buffer or range. Values outside of this hyperplane become support vectors and shape the regression line.
 
 
 ## Manual Data Prediction (before Python or ML)

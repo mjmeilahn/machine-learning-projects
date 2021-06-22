@@ -37,9 +37,9 @@ scaler = StandardScaler()
 x_train = scaler.fit_transform(x_train)
 x_test = scaler.transform(x_test)
 
-# Fit the Training Model on K-NN
-from sklearn.neighbors import KNeighborsClassifier
-classifier = KNeighborsClassifier(n_neighbors=5, metric='minkowski', p=2)
+# Fit the Training Model on SVM
+from sklearn.svm import SVC
+classifier = SVC(kernel='linear', random_state=0)
 classifier.fit(x_train, y_train)
 
 # Predict one new result

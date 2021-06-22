@@ -47,6 +47,14 @@
 
 
 
+### (Before ML) Below Regressions are modeled through Ordinary Least Squares
+
+
+
+### (Before ML) Logistic Regressions are modeled through Limited Dependent Variable -> Logit -> Binary
+
+
+
 ## How to Determine Model Accuracy
 
 90% to 100% = Too Good, it may be overfitted with correlating variables, poor sampling or include Training data.
@@ -67,15 +75,13 @@ Look at the predicted accuracy percent % when the average slope reaches 50%.
 
 
 
-### (Before ML) Below Regressions are modeled through Ordinary Least Squares
+## Types of Analyses
 
 Simple Linear Regression (Outcome is numerical) - Requires one dependent variable (like Salary) to predict and one independent variable (like Years of Experience) and a constant (starting point like zero). If we assume this data-relationship is linear - chart is visualized as a linear graph either upwards or downwards with various points of observations. Formula is Y = MX + B. Various tools exist outside of Python to visualize like R, GRETL or a general SAS product. The higher amount of observations lead to a lower P-Value to predict significance.
 
 Polynomial Regression (Outcome is numerical) - Requires one dependent variable (like Salary) to predict and one independent variable (like Years of Experience) and a constant (starting point like zero). If we assume this data-relationship is non-linear - chart is visualized as an exponential line graph either upwards or downwards with various points of observations. Formula is Y = MX + MX**2 + B. Various tools exist outside of Python to visualize like R, GRETL or a general SAS product. The higher amount of observations lead to a lower P-Value to predict significance.
 
 Multiple Linear Regression (Outcome is numerical) - Eliminating insignificant variables from the model through Backward Elimination (start with many variables) to remove any variable above 0.05 P-Value (re-running model after each removal) to reach high Adjusted R-Squared value. Predicting a lone dependent variable (like Profit). Categorical variables (like State or Gender) are treated as dummies and remove at least one dummy variable from a respective category (like omitting Female dummy variable if we select Male in the model) to avoid the correlation trap. Coefficients are weighted as per unit measure unless the same rate of measure applies across all variables.
-
-### (Before ML) Logistic Regressions are modeled through Limited Dependent Variable -> Logit -> Binary
 
 Logistic Regression (Outcome is Binary) - Same method to remove insignificant variables from the model through Backward Elimination (start with many variables) to remove any variable above 0.05 P-Value (re-running model after each removal) to reach high Adjusted R-Squared value. Predicting a lone dependent variable (like whether someone closed an account / binary). Categorical variables (like Region or Gender) are treated as dummies and remove at least one dummy variable from a respective category (like omitting Female dummy variable if we select Male in the model since Male will become binary as a result of becoming a dummy variable - same goes for any Categorical variable) to avoid the correlation trap. Coefficients need to be weighted under E Value calculation i.e. exponent of E. See Google Sheet for example and Heatmap for presentation.
 

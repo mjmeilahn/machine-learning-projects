@@ -26,14 +26,15 @@ x = dataset.iloc[:, 1:-1].values
 y = dataset.iloc[:, -1].values
 # print(y)
 
+# WARNING: This example trains the entire dataset
+#          In reality we split the dataset into Train/Test
+
 # Fit the Linear Regression to the entire dataset
-# (instead of splitting data first)
 from sklearn.linear_model import LinearRegression
 lin_reg = LinearRegression()
 lin_reg.fit(x, y)
 
 # Fit the Polynomial Regression to the entire dataset
-# (instead of splitting data first)
 from sklearn.preprocessing import PolynomialFeatures
 
 # "degree=4" is quite high and can lead to overfitting

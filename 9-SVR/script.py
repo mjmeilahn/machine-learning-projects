@@ -33,6 +33,9 @@ y = sc_y.fit_transform(y)
 # print(x)
 # print(y)
 
+# WARNING: This example trains the entire dataset
+#          In reality we split the dataset into Train/Test
+
 # Fit the entire dataset on SVR
 from sklearn.svm import SVR
 regressor = SVR(kernel = 'rbf')

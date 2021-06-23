@@ -20,7 +20,7 @@
 
 9. Support Vector Regression (SVR) - A hyperplane (or tube shaped object) is fitted to a linear plot where data points within the hyperplane are disregarded as "errors" and act instead as a buffer or range. Values outside of this hyperplane become support vectors and shape the regression line.
 
-10. Decision Tree - TBD
+10. Decision Tree - Assigns a section to a series of data points that appear as a cluster when visualized. Test model values are passed into the Decision Tree Training algorithm (Y/N) several times until it passes all hurdles to receive a numerical score. As an example think of how companies weed out job candidates based on select criteria and assign an outcome to each applicant.
 
 
 
@@ -66,7 +66,7 @@ Kernel SVM (Outcome is Binary) - Same as normal SVM except its boundary line of 
 
 Support Vector SVR (SVR) where outcome is numerical - A hyperplane (or tube shaped object) is fitted to a linear plot where data points within the hyperplane are disregarded as "errors" and act instead as a buffer or range. Values outside of this hyperplane become support vectors and shape the regression line.
 
-Decision Tree (Outcome is numerical) - 
+Decision Tree (Outcome is numerical) - Assigns a section to a series of data points that appear as a cluster when visualized. Test model values are passed into the Decision Tree Training algorithm (Y/N) several times until it passes all hurdles to receive a numerical score. As an example think of how companies weed out job candidates based on select criteria and assign an outcome to each applicant.
 
 
 ## Manual Data Prediction (before Python or ML)

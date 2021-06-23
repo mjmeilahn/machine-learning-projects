@@ -20,6 +20,8 @@
 
 9. Support Vector Regression (SVR) - A hyperplane (or tube shaped object) is fitted to a linear plot where data points within the hyperplane are disregarded as "errors" and act instead as a buffer or range. Values outside of this hyperplane become support vectors and shape the regression line.
 
+10. Decision Tree - TBD
+
 
 
 # TODO: Create EXTRA Jupyter Notebook versions of projects
@@ -62,7 +64,9 @@ Support Vector Machine (SVM) where outcome is Binary - Same as Logistic Regressi
 
 Kernel SVM (Outcome is Binary) - Same as normal SVM except its boundary line of separation appears as a non-linear curve for data that do not have a linear Yes/No relationship.
 
-Support Vector SVR (SVR) - A hyperplane (or tube shaped object) is fitted to a linear plot where data points within the hyperplane are disregarded as "errors" and act instead as a buffer or range. Values outside of this hyperplane become support vectors and shape the regression line.
+Support Vector SVR (SVR) where outcome is numerical - A hyperplane (or tube shaped object) is fitted to a linear plot where data points within the hyperplane are disregarded as "errors" and act instead as a buffer or range. Values outside of this hyperplane become support vectors and shape the regression line.
+
+Decision Tree (Outcome is numerical) - 
 
 
 ## Manual Data Prediction (before Python or ML)

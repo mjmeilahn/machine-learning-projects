@@ -20,13 +20,17 @@
 
 9. Support Vector Regression (SVR) - A hyperplane (or tube shaped object) is fitted to a linear plot where data points within the hyperplane are disregarded as "errors" and act instead as a buffer or range. Values outside of this hyperplane become support vectors and shape the regression line.
 
-10. Decision Tree - Assigns a section to a series of data points that appear as a cluster when visualized. Test model values are passed into the Decision Tree Training algorithm (Y/N) several times until it passes all hurdles to receive a numerical score. As an example think of how companies weed out job candidates based on select criteria and assign an outcome to each applicant.
+10. Decision Tree Regression - Assigns a section to a series of data points that appear as a cluster when visualized. Test model values are passed into the Decision Tree Training algorithm (Y/N) several times until it passes all hurdles to receive a numerical score. As an example think of how companies weed out job candidates based on select criteria and assign an outcome to each applicant.
 
-11. Random Forest - TBD
+11. Random Forest Regression - Multiple random samples taken from a Decision Tree Regression and trains the model on averages of the samples.
 
 
 
 # TODO: Create EXTRA Jupyter Notebook versions of projects
+
+
+
+# TODO: Attach screenshots/examples of all ML visuals
 
 
 
@@ -70,7 +74,7 @@ Support Vector Regression (SVR) where outcome is numerical - A hyperplane (or tu
 
 Decision Tree Regression (Outcome is numerical) - Assigns a section to a series of data points that appear as a cluster when visualized. Test model values are passed into the Decision Tree Training algorithm (Y/N) several times until it passes all hurdles to receive a numerical score. As an example think of how companies weed out job candidates based on select criteria and assign an outcome to each applicant.
 
-Random Forest Regression (Outcome is numerical) - TBD
+Random Forest Regression (Outcome is numerical) - Multiple random samples taken from a Decision Tree Regression and trains the model on averages of the samples.
 
 
 ## Manual Data Prediction (before Python or ML)

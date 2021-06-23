@@ -22,6 +22,8 @@
 
 10. Decision Tree - Assigns a section to a series of data points that appear as a cluster when visualized. Test model values are passed into the Decision Tree Training algorithm (Y/N) several times until it passes all hurdles to receive a numerical score. As an example think of how companies weed out job candidates based on select criteria and assign an outcome to each applicant.
 
+11. Random Forest - TBD
+
 
 
 # TODO: Create EXTRA Jupyter Notebook versions of projects
@@ -64,9 +66,11 @@ Support Vector Machine (SVM) where outcome is Binary - Same as Logistic Regressi
 
 Kernel SVM (Outcome is Binary) - Same as normal SVM except its boundary line of separation appears as a non-linear curve for data that do not have a linear Yes/No relationship.
 
-Support Vector SVR (SVR) where outcome is numerical - A hyperplane (or tube shaped object) is fitted to a linear plot where data points within the hyperplane are disregarded as "errors" and act instead as a buffer or range. Values outside of this hyperplane become support vectors and shape the regression line.
+Support Vector Regression (SVR) where outcome is numerical - A hyperplane (or tube shaped object) is fitted to a linear plot where data points within the hyperplane are disregarded as "errors" and act instead as a buffer or range. Values outside of this hyperplane become support vectors and shape the regression line.
 
-Decision Tree (Outcome is numerical) - Assigns a section to a series of data points that appear as a cluster when visualized. Test model values are passed into the Decision Tree Training algorithm (Y/N) several times until it passes all hurdles to receive a numerical score. As an example think of how companies weed out job candidates based on select criteria and assign an outcome to each applicant.
+Decision Tree Regression (Outcome is numerical) - Assigns a section to a series of data points that appear as a cluster when visualized. Test model values are passed into the Decision Tree Training algorithm (Y/N) several times until it passes all hurdles to receive a numerical score. As an example think of how companies weed out job candidates based on select criteria and assign an outcome to each applicant.
+
+Random Forest Regression (Outcome is numerical) - TBD
 
 
 ## Manual Data Prediction (before Python or ML)

@@ -31,7 +31,6 @@ x_train, x_test, y_train, y_test = train_test_split(x, y, test_size = 0.25, rand
 # Feature Scaling is not applicable to all Machine Learning
 # Such as categorical variables
 
-# OPTIONAL: Feature Scaling is not required for Logistic Regression
 from sklearn.preprocessing import StandardScaler
 scaler = StandardScaler()
 x_train = scaler.fit_transform(x_train)

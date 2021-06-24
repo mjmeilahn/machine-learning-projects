@@ -18,21 +18,22 @@
 
 8. Kernel SVM (Outcome is Binary) - Same as normal SVM except its boundary line of separation appears as a non-linear curve for data that do not have a linear Yes/No relationship. Predicts Purchase Rate (Y/N) based on Age and Estimated Salary.
 
-9. Support Vector Regression (SVR) where outcome is numerical - A hyperplane (or tube shaped object) is fitted to a linear plot where data points within the hyperplane are disregarded as "errors" and act instead as a buffer or range. Values outside of this hyperplane become support vectors and shape the regression line.
+9. Support Vector Regression (SVR) where outcome is Numerical - A hyperplane (or tube shaped object) is fitted to a linear plot where data points within the hyperplane are disregarded as "errors" and act instead as a buffer or range. Values outside of this hyperplane become support vectors and shape the regression line.
 
 10. Decision Tree Regression (Outcome is Numerical) - Assigns a section to a series of data points that appear as a cluster when visualized. Test model values are passed into the Decision Tree Training algorithm (Y/N) several times until it passes all hurdles to receive a numerical score. As an example think of how companies weed out job candidates based on select criteria and assign an outcome to each applicant.
 
 11. Random Forest Regression (Outcome is Numerical) - Multiple random samples taken from a Decision Tree Regression and trains the model on averages of the samples.
 
-12. Naive Bayes (Outcome is Binary) - TBD
+12. Naive Bayes (Outcome is Binary) - Test values are given a small range (or circular area) where its assignment (Yes/No) will depend on the probability of surrounding data points. The more a given sample area has a Yes/No representation the likelihood (or probability) the predicted result will conform to a Yes/No assignment. Not to be confused with K-NN which just looks at the nearest neigbor where Naive Bayes looks at micro sample sizes like an entire city (multiple neighbors) for example.
+
+13. Decision Tree Classifier (Outcome is Binary) - Assigns a section to a series of data points that appear as a cluster when visualized. Test model values are passed into the Decision Tree Training algorithm (Y/N) several times until it passes all hurdles to receive a binary score (Y/N). As an example think of how companies weed out job candidates based on select criteria and assign an outcome to each applicant.
+
+14. Random Forest Classifier (Outcome is Binary) - Multiple random samples taken from a Decision Tree Classifier and trains the model on averages of the samples.
 
 
+### TODO: Attach screenshots/examples of all ML visuals
 
-# TODO: Create EXTRA Jupyter Notebook versions of projects
-
-
-
-# TODO: Attach screenshots/examples of all ML visuals
+### TODO: Create EXTRA Jupyter Notebook versions of projects
 
 
 
@@ -52,7 +53,13 @@ Below 60% = Trash, throw it out and go through the Training process again.
 
 ## How to Determine Model Effectiveness
 
-Look at the predicted accuracy percent % when the average slope reaches 50%.
+1. Look at the Confusion Matrix.
+
+2. Look at the coefficients.
+
+3. Look at Adjusted R-Squared.
+
+4. Look at the CAP and predicted accuracy percent % when the average slope reaches 50%.
 
 
 
@@ -81,6 +88,6 @@ Look at the predicted accuracy percent % when the average slope reaches 50%.
 
 
 
-### (SAS / Gretl) Linear Regressions are modeled through Ordinary Least Squares
+### (Before ML) Linear Regressions are modeled through Ordinary Least Squares in SAS / Gretl
 
-### (SAS / Gretl) Logistic Regressions are modeled through Limited Dependent Variable -> Logit -> Binary
+### (Before ML) Logistic Regressions are modeled through Limited Dependent Variable -> Logit -> Binary in SAS / Gretl

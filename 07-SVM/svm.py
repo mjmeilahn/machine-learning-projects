@@ -31,7 +31,6 @@ x_train, x_test, y_train, y_test = train_test_split(x, y, test_size = 0.25, rand
 # Feature Scaling is not applicable to all Machine Learning
 # Such as categorical variables
 
-# OPTIONAL: Feature Scaling is not required for Logistic Regression
 from sklearn.preprocessing import StandardScaler
 scaler = StandardScaler()
 x_train = scaler.fit_transform(x_train)
@@ -77,7 +76,7 @@ print(cm)
 # for i, j in enumerate(np.unique(y_set)):
 #     plt.scatter(x_set[y_set == j, 0], x_set[y_set == j, 1], c = ListedColormap(('red', 'green'))(i), label = j)
 
-# plt.title('Logistic Regression (Training Model)')
+# plt.title('SVM (Training Model)')
 # plt.xlabel('Age')
 # plt.ylabel('Estimated Salary')
 # plt.legend()
@@ -95,7 +94,7 @@ print(cm)
 # for i, j in enumerate(np.unique(y_set)):
 #     plt.scatter(x_set[y_set == j, 0], x_set[y_set == j, 1], c = ListedColormap(('red', 'green'))(i), label = j)
 
-# plt.title('Logistic Regression (Test Model)')
+# plt.title('SVM (Test Model)')
 # plt.xlabel('Age')
 # plt.ylabel('Estimated Salary')
 # plt.legend()

@@ -12,17 +12,19 @@
 
 5. Logistic Regression (Outcome is Binary) - Same method to remove insignificant variables from the model through Backward Elimination (start with many variables) to remove any variable above 0.05 P-Value (re-running model after each removal) to reach high Adjusted R-Squared value. Predicting a lone dependent variable (like whether someone closed an account / binary). Categorical variables (like Region or Gender) are treated as dummies and remove at least one dummy variable from a respective category (like omitting Female dummy variable if we select Male in the model since Male will become binary as a result of becoming a dummy variable - same goes for any Categorical variable) to avoid the correlation trap. Coefficients need to be weighted under E Value calculation i.e. exponent of E. See Google Sheet for example and Heatmap for presentation.
 
-6. K-NN (K-Nearest Neighbors) where outcome is Binary - Same as Logistic Regression but its Training & Test Models have a more flexible line of separation between Yes/No. Depends entirely on the dataset and the correlation between relationships.
+6. K-NN (K-Nearest Neighbors) where outcome is Binary - Same as Logistic Regression but its Training & Test Models have a more flexible line of separation between Yes/No. Algorithm will assign prediction based on the data point's "Nearest Neighbor."
 
-7. Support Vector Machine (SVM) - Predicts Purchase Rate (Y/N) based on Age and Estimated Salary. Yes/No are defined by equal distances of closest polar opposite data points belonging to Yes or No respectively. Visually this can appear as a straight line between Yes/No and may mimic a Logistic Regression but the nearest opposing data points define the boundary line.
+7. Support Vector Machine (SVM) where outcome is Binary - Predicts Purchase Rate (Y/N) based on Age and Estimated Salary. Yes/No are defined by equal distances of closest polar opposite data points belonging to Yes or No respectively. Visually this can appear as a straight line between Yes/No and may mimic a Logistic Regression but the nearest opposing data points define the boundary line.
 
-8. Kernel SVM - Same as normal SVM except its boundary line of separation appears as a non-linear curve for data that do not have a linear Yes/No relationship. Predicts Purchase Rate (Y/N) based on Age and Estimated Salary.
+8. Kernel SVM (Outcome is Binary) - Same as normal SVM except its boundary line of separation appears as a non-linear curve for data that do not have a linear Yes/No relationship. Predicts Purchase Rate (Y/N) based on Age and Estimated Salary.
 
-9. Support Vector Regression (SVR) - A hyperplane (or tube shaped object) is fitted to a linear plot where data points within the hyperplane are disregarded as "errors" and act instead as a buffer or range. Values outside of this hyperplane become support vectors and shape the regression line.
+9. Support Vector Regression (SVR) where outcome is numerical - A hyperplane (or tube shaped object) is fitted to a linear plot where data points within the hyperplane are disregarded as "errors" and act instead as a buffer or range. Values outside of this hyperplane become support vectors and shape the regression line.
 
-10. Decision Tree Regression - Assigns a section to a series of data points that appear as a cluster when visualized. Test model values are passed into the Decision Tree Training algorithm (Y/N) several times until it passes all hurdles to receive a numerical score. As an example think of how companies weed out job candidates based on select criteria and assign an outcome to each applicant.
+10. Decision Tree Regression (Outcome is Numerical) - Assigns a section to a series of data points that appear as a cluster when visualized. Test model values are passed into the Decision Tree Training algorithm (Y/N) several times until it passes all hurdles to receive a numerical score. As an example think of how companies weed out job candidates based on select criteria and assign an outcome to each applicant.
 
-11. Random Forest Regression - Multiple random samples taken from a Decision Tree Regression and trains the model on averages of the samples.
+11. Random Forest Regression (Outcome is Numerical) - Multiple random samples taken from a Decision Tree Regression and trains the model on averages of the samples.
+
+12. Naive Bayes (Outcome is Binary) - TBD
 
 
 

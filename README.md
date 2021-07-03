@@ -30,7 +30,7 @@
 
 14. Random Forest Classifier (Outcome is Binary) - Multiple random samples taken from a Decision Tree Classifier and trains the model on averages of the samples.
 
-15. K-Means Clustering - TBD
+15. K-Means Clustering (Outcome is a Grouping) - Not to be confused with Decision Tree Algorithm where we have no control where to place centers of each cluster (or grouping). To use K-Means first choose number K of clusters (or groups), Select at random K points -> the centers of each group (not necessarily from the dataset) which the centers are equal distance from each other, Assign each data point to the closest center -> That forms K clusters (or groups), Compute and place the new center of each cluster, Reassign each data point to the closest center, If any reassignment took place, recompute otherwise finished.
 
 
 ### TODO: Attach screenshots/examples of all ML visuals

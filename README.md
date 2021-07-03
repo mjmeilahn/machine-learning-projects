@@ -30,6 +30,8 @@
 
 14. Random Forest Classifier (Outcome is Binary) - Multiple random samples taken from a Decision Tree Classifier and trains the model on averages of the samples.
 
+15. K-Means Clustering - TBD
+
 
 ### TODO: Attach screenshots/examples of all ML visuals
 

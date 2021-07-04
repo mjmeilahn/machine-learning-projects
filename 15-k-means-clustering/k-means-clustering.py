@@ -11,7 +11,7 @@ x = dataset.iloc[:, [3,4]].values
 # print(x)
 
 # We do not split data into Train & Test yet
-# Because we are trying to find a dependent variable
+# Because we are trying to find a potential dependent variable
 
 # Use Elbow Method to find the correct amount of clusters
 from sklearn.cluster import KMeans

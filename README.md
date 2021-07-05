@@ -1,6 +1,6 @@
 # Machine Learning Projects
 
-## Repo Projects
+## Repos
 
 1. Data Preprocessing - Basics of importing data, filling in empty values with averages, split observations between test and training groups. Feature scaling applied to normalize model.
 
@@ -38,60 +38,3 @@
 ### TODO:
 - Create Jupyter Notebook versions of projects
 - Attach screenshots/examples of all charts & visuals
-
-
-
-## How to Determine Model Accuracy
-
-90% to 100% = Too Good, it may be overfitted with correlating variables, poor sampling or include Training data.
-
-80% to 90% = Very Good, something of a rarity and needs to be re-confirmed just in case.
-
-70% to 80% = Good, this range is ideal and is in line with industry standards.
-
-60% to 70% = Poor, this is sub-standard and may yield a positive result though its impact is not as great.
-
-Below 60% = Trash, throw it out and go through the Training process again.
-
-
-
-## How to Determine Model Effectiveness
-
-1. Look at the Confusion Matrix.
-
-2. Look at the coefficients.
-
-3. Look at Adjusted R-Squared.
-
-4. Look at the CAP and predicted accuracy percent % when the average slope reaches 50%.
-
-
-
-## Manual Data Prediction (before Python or ML)
-
-1. Take a large set of data.
-2. Identify the numerical or logistic dependent variable you want to predict.
-3. Split the sample size 50/50 or 70/30.
-4. The larger split is used for training the model - the smaller for testing the model.
-5. Train the model through Linear or Logistic Regression - see repo projects below.
-6. (Gretl) Model window -> Analysis -> Forecasts -> Add To Dataset / Plus Icon -> Name variable as "P-Hat" or [variable]-Hat -> Export Data -> Choose ID, Dependent Variable, newly created P-Hat -> Export CSV
-7. (Google Sheets) Open CSV export and sort rows by highest P-Hat value
-8. (Google Sheets) Open Cumulative Accuracy Profile (CAP) Template, DUPLICATE and fill-in values from CSV export after sorting highest P-Hat value
-9. Select % columns then -> Insert -> Chart -> Simple Line Graph
-10. This is the END of Training the Model and viewing its CAP
-11. Make a copy of the smaller sample size which was not used in Training the model
-12. Remove dependent variable you want to predict from the copy
-13. Make a new CSV (or file) with Training and Test data
-14. (Gretl) Import Training & Test data, re-create variables and run the model -> Test data will not be counted since we removed its dependent variable in STEP 12 -> Model window -> Analysis -> Forecasts (only the Test Data rows) -> Add To Dataset / Plus Icon -> Name variable as "P-Hat" or [variable]-Hat -> Export Data -> Select ID, Dependent Variable, newly create P-Hat -> Export CSV
-15. (Google Sheets) Open CSV export and sort rows by highest P-Hat value
-16. (Google Sheets) Open Cumulative Accuracy Profile (CAP) Template, DUPLICATE and fill-in values from CSV export after sorting highest P-Hat value
-17. Select % columns then -> Insert -> Chart -> Simple Line Graph
-18. This is the END of Testing the Model and viewing its CAP
-19. Compare both CAPs
-20. Repeat earlier steps as needed if accuracy is below 60% or above 90%
-
-
-
-### (Before ML) Linear Regressions are modeled through Ordinary Least Squares in SAS / Gretl
-
-### (Before ML) Logistic Regressions are modeled through Limited Dependent Variable -> Logit -> Binary in SAS / Gretl

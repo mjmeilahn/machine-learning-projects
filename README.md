@@ -1,5 +1,9 @@
 # Machine Learning Projects
 
+### TODO:
+- Create Jupyter Notebook versions of projects
+- Attach screenshots/examples of all charts & visuals
+
 ## Repos
 
 1. Data Preprocessing - Basics of importing data, filling in empty values with averages, split observations between test and training groups. Feature scaling applied to normalize model.
@@ -34,7 +38,4 @@
 
 16. Hierarchical Clustering (Outcome is a Grouping) - Not to be confused with K-Means Algorithm but it can often produce the same results. There are two main approaches to HC which are Agglomerative and Divisive - this example will focus on Agglomerative where it focuses on a single data point building a cluster around it based on the proximity of nearby data points. Several options exist how to structure the creation of clusters: choose nearest data points, choose farthest data points, choose average (or Euclidean) distance between data points, OR choose distance from centers (like K-Means).
 
-
-### TODO:
-- Create Jupyter Notebook versions of projects
-- Attach screenshots/examples of all charts & visuals
+17. Apriori - TBD

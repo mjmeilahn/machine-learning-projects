@@ -40,4 +40,4 @@
 
 17. Apriori (Outcome is Associations) - Algorithm commonly known as "Customers Who Bought X Also Bought Y" where Support, Confidence and Lift are used to measure likelihood of items combined together and the highest Lift determines the winning combination. Example: Movies streamed through Netflix. Support = Watchlists With X / All Watchlists. Confidence = Watchlists With X & Y / Watchlists With X. Lift = Confidence / Support.
 
-18. Eclat (Outcome is Associations) - Same as Apriori except Eclat deals only with Support as its main rule of building associations. Example: Movies streamed through Netflix. Support = Watchlists With X / All Watchlists.
+18. Eclat (Outcome is Associations) - Same as Apriori except Eclat deals only with Support as its main rule of building associations. In terms of which is better, Apriori has more reliable parameters such as Confidence and Lift. Eclat should be used on a case-by-case basis for associations. Example: Movies streamed through Netflix. Support = Watchlists With X / All Watchlists.

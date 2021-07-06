@@ -38,6 +38,6 @@
 
 16. Hierarchical Clustering (Outcome is a Grouping) - Not to be confused with K-Means Algorithm but it can often produce the same results. There are two main approaches to HC which are Agglomerative and Divisive - this example will focus on Agglomerative where it focuses on a single data point building a cluster around it based on the proximity of nearby data points. Several options exist how to structure the creation of clusters: choose nearest data points, choose farthest data points, choose average (or Euclidean) distance between data points, OR choose distance from centers (like K-Means).
 
-17. Apriori (Outcome is Associations) - Algorithm also known as "Customers Who Bought X Also Bought Y" where Support, Confidence and Lift are used to measure likelihood of items combined together and the highest Lift determines the winning combination. Example: Movies streamed through Netflix. Support = Watchlists With X / All Watchlists. Confidence = Watchlists With X & Y / Watchlists With X. Lift = Confidence / Support.
+17. Apriori (Outcome is Associations) - Algorithm commonly known as "Customers Who Bought X Also Bought Y" where Support, Confidence and Lift are used to measure likelihood of items combined together and the highest Lift determines the winning combination. Example: Movies streamed through Netflix. Support = Watchlists With X / All Watchlists. Confidence = Watchlists With X & Y / Watchlists With X. Lift = Confidence / Support.
 
-18. Eclat (Outcome is Associations) - TBD
+18. Eclat (Outcome is Associations) - Same as Apriori except Eclat deals only with Support as its main rule of building associations. Example: Movies streamed through Netflix. Support = Watchlists With X / All Watchlists.

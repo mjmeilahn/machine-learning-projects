@@ -16,13 +16,13 @@
 
 5. Logistic Regression (Outcome is Binary) - Same method to remove insignificant variables from the model through Backward Elimination (start with many variables) to remove any variable above 0.05 P-Value (re-running model after each removal) to reach high Adjusted R-Squared value. Predicting a lone dependent variable (like whether someone closed an account / binary). Categorical variables (like Region or Gender) are treated as dummies and remove at least one dummy variable from a respective category (like omitting Female dummy variable if we select Male in the model since Male will become binary as a result of becoming a dummy variable - same goes for any Categorical variable) to avoid the correlation trap. Coefficients need to be weighted under E Value calculation i.e. exponent of E. See Google Sheet for example and Heatmap for presentation.
 
-6. K-NN (K-Nearest Neighbors) where outcome is Binary - Same as Logistic Regression but its Training & Test Models have a more flexible line of separation between Yes/No. Algorithm will assign prediction based on the data point's "Nearest Neighbor."
+6. K-NN (K-Nearest Neighbors) where Outcome is Binary - Same as Logistic Regression but its Training & Test Models have a more flexible line of separation between Yes/No. Algorithm will assign prediction based on the data point's "Nearest Neighbor."
 
-7. Support Vector Machine (SVM) where outcome is Binary - Predicts Purchase Rate (Y/N) based on Age and Estimated Salary. Yes/No are defined by equal distances of closest polar opposite data points belonging to Yes or No respectively. Visually this can appear as a straight line between Yes/No and may mimic a Logistic Regression but the nearest opposing data points define the boundary line.
+7. Support Vector Machine (SVM) where Outcome is Binary - Predicts Purchase Rate (Y/N) based on Age and Estimated Salary. Yes/No are defined by equal distances of closest polar opposite data points belonging to Yes or No respectively. Visually this can appear as a straight line between Yes/No and may mimic a Logistic Regression but the nearest opposing data points define the boundary line.
 
 8. Kernel SVM (Outcome is Binary) - Same as normal SVM except its boundary line of separation appears as a non-linear curve for data that do not have a linear Yes/No relationship. Predicts Purchase Rate (Y/N) based on Age and Estimated Salary.
 
-9. Support Vector Regression (SVR) where outcome is Numerical - A hyperplane (or tube shaped object) is fitted to a linear plot where data points within the hyperplane are disregarded as "errors" and act instead as a buffer or range. Values outside of this hyperplane become support vectors and shape the regression line.
+9. Support Vector Regression (SVR) where Outcome is Numerical - A hyperplane (or tube shaped object) is fitted to a linear plot where data points within the hyperplane are disregarded as "errors" and act instead as a buffer or range. Values outside of this hyperplane become support vectors and shape the regression line.
 
 10. Decision Tree Regression (Outcome is Numerical) - Assigns a section to a series of data points that appear as a cluster when visualized. Test model values are passed into the Decision Tree Training algorithm (Y/N) several times until it passes all hurdles to receive a numerical score. As an example think of how companies weed out job candidates based on select criteria and assign an outcome to each applicant.
 
@@ -41,3 +41,5 @@
 17. Apriori (Outcome is Associations) - Algorithm commonly known as "Customers Who Bought X Also Bought Y" where Support, Confidence and Lift are used to measure likelihood of items combined together and the highest Lift determines the winning combination. Example: Movies streamed through Netflix. Support = Watchlists With X / All Watchlists. Confidence = Watchlists With X & Y / Watchlists With X. Lift = Confidence / Support.
 
 18. Eclat (Outcome is Associations) - Same as Apriori except Eclat deals only with Support as its main rule of building associations. In terms of which is better, Apriori has more reliable parameters such as Confidence and Lift. Eclat should be used on a case-by-case basis for associations. Example: Movies streamed through Netflix. Support = Watchlists With X / All Watchlists.
+
+19. Upper Confidence Bound (UCB) where Outcome is Choice - TBD

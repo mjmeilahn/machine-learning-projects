@@ -13,29 +13,28 @@ import random
 rows = 10000 # HARD CODED
 columns = 10 # HARD CODED
 ads_selected = []
-number_of_selections = [0] * columns
-sum_of_rewards = [0] * columns
+number_of_rewards_1 = [0] * columns
+number_of_rewards_0 = [0] * columns
 total_reward = 0
 
 for row in range(0, rows):
     ad = 0
-    max_upper_bound = 0
+    max_random = 0
 
     for i in range(0, columns):
-        if (number_of_selections[i] > 0):
-            average_reward = sum_of_rewards[i] / number_of_selections[i]
-            delta_i = math.sqrt(3/2 * math.log(row + 1) / number_of_selections[i])
-            upper_bound = average_reward + delta_i
-        else:
-            upper_bound = 1e400
-
-        if (upper_bound > max_upper_bound):
-            max_upper_bound = upper_bound
+        random_beta = random.betavariate(number_of_rewards_1[i] + 1, number_of_rewards_0[i] + 1)
+        if (random_beta > max_random):
+            max_random = random_beta
             ad = i
-    ads_selected.append(ad + 1) # Remove indexes from plotted X-Ticks
-    number_of_selections[ad] += 1
+
+    ads_selected.append(ad + 1)
     reward = dataset.values[row, ad]
-    sum_of_rewards[ad] = sum_of_rewards[ad] + reward
+
+    if reward == 1:
+        number_of_rewards_1[ad] = number_of_rewards_1[ad] + 1
+    else:
+        number_of_rewards_0[ad] = number_of_rewards_0[ad] + 1
+
     total_reward = total_reward + reward
 
 # Visualize Thompson Sampling

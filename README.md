@@ -44,4 +44,4 @@
 
 19. Upper Confidence Bound (UCB) where Outcome is Choice - Algorithm fast selection process is based on choices (or conversions) which produce the highest return and will reward the algorithm until it identifies the correct choice. All variations are treated as averages until each begin to move away from a given average range. Those that perform "above the line" are sampled more often until they fall under the average range. Algorithm will repeat until it identifies a variation constantly performing "above the line."
 
-20. Thompson Sampling (Outcome is Choice) - TBD
+20. Thompson Sampling (Outcome is Choice) - Different than UCB which is Deterministic, requires a sample from each variation for a given round and has averages and a boundary to approve or eliminate a variation. A Thompson Sampling is Probabilistic, does not require a sample from each variation after many rounds as the algorithm will still identify the correct choice. Due to its probabilistic nature and its support of delayed feedback Thompson Sampling is usually the better choice where a sample cannot be provided each round.

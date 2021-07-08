@@ -43,3 +43,5 @@
 18. Eclat (Outcome is Associations) - Same as Apriori except Eclat deals only with Support as its main rule of building associations. In terms of which is better, Apriori has more reliable parameters such as Confidence and Lift. Eclat should be used on a case-by-case basis for associations. Example: Movies streamed through Netflix. Support = Watchlists With X / All Watchlists.
 
 19. Upper Confidence Bound (UCB) where Outcome is Choice - Algorithm fast selection process is based on choices (or conversions) which produce the highest return and will reward the algorithm until it identifies the correct choice. All variations are treated as averages until each begin to move away from a given average range. Those that perform "above the line" are sampled more often until they fall under the average range. Algorithm will repeat until it identifies a variation constantly performing "above the line."
+
+20. Thompson Sampling (Outcome is Choice) - TBD

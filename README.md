@@ -1,6 +1,7 @@
 # Machine Learning Projects
 
 ### TODO:
+- Remove Hard Coded lines with universal substitutes
 - Create Jupyter Notebook versions of projects
 - Attach screenshots/examples of all charts & visuals
 

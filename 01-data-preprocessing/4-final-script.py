@@ -57,6 +57,6 @@ x_train, x_test, y_train, y_test = train_test_split(x, y, test_size = 0.2, rando
 # Such as categorical variables
 
 from sklearn.preprocessing import StandardScaler
-sc_x = StandardScaler()
-x_train = sc_x.fit_transform(x_train)
-x_test = sc_x.transform(x_test)
+sc = StandardScaler()
+x_train = sc.fit_transform(x_train)
+x_test = sc.transform(x_test)

@@ -21,7 +21,7 @@
 
 7. Support Vector Machine (SVM) where Outcome is Binary - Predicts Purchase Rate (Y/N) based on Age and Estimated Salary. Yes/No are defined by equal distances of closest polar opposite data points belonging to Yes or No respectively. Visually this can appear as a straight line between Yes/No and may mimic a Logistic Regression but the nearest opposing data points define the boundary line.
 
-8. Kernel SVM (Outcome is Binary) - Same as normal SVM except its boundary line of separation appears as a non-linear curve for data that do not have a linear Yes/No relationship. Predicts Purchase Rate (Y/N) based on Age and Estimated Salary.
+8. Kernel SVM (Outcome is Binary) - Same as normal SVM except data is mapped into a 3-Dimensional space for non-linear datasets and mapped again into a 2-Dimensional subspace for easy visualization. Its 2-Dimensional boundary line of separation appears as a non-linear curve for data that do not have a linear Yes/No relationship. Predicts Purchase Rate (Y/N) based on Age and Estimated Salary.
 
 9. Support Vector Regression (SVR) where Outcome is Numerical - A hyperplane (or tube shaped object) is fitted to a linear plot where data points within the hyperplane are disregarded as "errors" and act instead as a buffer or range. Values outside of this hyperplane become support vectors and shape the regression line.
 
@@ -57,4 +57,4 @@
 
 25. Linear Discriminant Analysis (LDA) where Outcome is Relationships Between Variables - Unlike PCA, LDA is Supervised and Deterministic how they relate to the dependent variable. (Again not a branch within Machine Learning but important to identify correlations within data)
 
-26. Kernel PCA (Outcome is Relationships Between Variables) - TBD
+26. Kernel PCA (Outcome is Relationships Between Variables) - For non-linear relationships (or where normal PCA is considered linear) a given dataset is mapped into 3-Dimensional space and again mapped into a 2-Dimensional subspace for easy visualization (and our comprehension).

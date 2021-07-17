@@ -56,3 +56,5 @@
 24. Principal Component Analysis (PCA) where Outcome is Relationships Between Variables - Unsupervised and Probabilistic in application. Similar to an elimination process (like Backward Elimination) or dimensionality reduction in datasets. (Not a branch within Machine Learning but important to identify correlations within data)
 
 25. Linear Discriminant Analysis (LDA) where Outcome is Relationships Between Variables - Unlike PCA, LDA is Supervised and Deterministic how they relate to the dependent variable. (Again not a branch within Machine Learning but important to identify correlations within data)
+
+26. Kernel PCA (Outcome is Relationships Between Variables) - TBD

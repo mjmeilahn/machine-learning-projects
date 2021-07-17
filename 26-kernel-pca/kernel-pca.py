@@ -20,10 +20,10 @@ x_train = sc.fit_transform(x_train)
 x_test = sc.transform(x_test)
 
 # Apply Kernel PCA = "n_components" is HARD CODED to dataset
-from sklearn.discriminant_analysis import LinearDiscriminantAnalysis as LDA
-lda = LDA(n_components=2)
-x_train = lda.fit_transform(x_train, y_train)
-x_test = lda.transform(x_test)
+# from sklearn.decomposition import KernelPCA
+# kpca = KernelPCA(n_components=2, kernel='rbf')
+# x_train = kpca.fit_transform(x_train)
+# x_test = kpca.fit_transform(x_test)
 
 # Fit the Training Model on Logistic Regression
 from sklearn.linear_model import LogisticRegression

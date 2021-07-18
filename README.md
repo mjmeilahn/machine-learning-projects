@@ -58,3 +58,5 @@
 25. Linear Discriminant Analysis (LDA) where Outcome is Relationships Between Variables - Unlike PCA, LDA is Supervised and Deterministic how they relate to the dependent variable. (Again not a branch within Machine Learning but important to identify correlations within data)
 
 26. Kernel PCA (Outcome is Relationships Between Variables) - For non-linear relationships (or where normal PCA is considered linear) a given dataset is mapped into 3-Dimensional space and again mapped into a 2-Dimensional subspace for easy visualization (and our comprehension).
+
+27. K-Fold Cross Validation - TBD

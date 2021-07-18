@@ -53,15 +53,20 @@ y_pred = classifier.predict(x_test)
 from sklearn.metrics import confusion_matrix, accuracy_score
 score = accuracy_score(y_test, y_pred)
 cm = confusion_matrix(y_test, y_pred)
-print('Accuracy Score')
+print('Test Accuracy')
 print(score)
 print('')
 print('Confusion Matrix')
 print(cm)
 
 # Apply K-Fold Cross Validation
-
-
+# "K" number of folds "cv" is HARD CODED
+from sklearn.model_selection import cross_val_score
+accuracies = cross_val_score(estimator=classifier, X=x_train, y=y_train, cv=10)
+print('')
+print(f'K-Fold Accuracy {accuracies.mean()*100:.2f} %')
+print('')
+print(f'Standard Deviation {accuracies.std()*100:.2f} %')
 
 # WARNING: Below code eats a lot of CPU at runtime
 

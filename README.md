@@ -5,7 +5,7 @@
 - Create Jupyter Notebook versions of projects
 - Attach screenshots/examples of all charts & visuals
 
-## Repos
+## Examples
 
 1. Data Preprocessing - Basics of importing data, filling in empty values with averages, split observations between test and training groups. Feature scaling applied to normalize model.
 
@@ -59,4 +59,4 @@
 
 26. Kernel PCA (Outcome is Relationships Between Variables) - For non-linear relationships (or where normal PCA is considered linear) a given dataset is mapped into 3-Dimensional space and again mapped into a 2-Dimensional subspace for easy visualization (and our comprehension).
 
-27. K-Fold Cross Validation - TBD
+27. K-Fold Cross Validation (Outcome is Validation) - K-Fold is a resampling procedure used to evaluate machine learning models on a limited data sample. Cross-validation is primarily used in applied machine learning to estimate the skill of a machine learning model on unseen data. That is, to use a limited sample in order to estimate how the model is expected to perform in general when used to make predictions on data not used during the training of the model. It is a popular method because it is simple to understand and because it generally results in a less biased or less optimistic estimate of the model skill than other methods, such as a simple train/test split.

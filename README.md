@@ -60,3 +60,5 @@
 26. Kernel PCA (Outcome is Relationships Between Variables) - For non-linear relationships (or where normal PCA is considered linear) a given dataset is mapped into 3-Dimensional space and again mapped into a 2-Dimensional subspace for easy visualization (and our comprehension).
 
 27. K-Fold Cross Validation (Outcome is Validation) - K-Fold is a resampling procedure used to evaluate machine learning models on a limited data sample. Resamples the Training set "K" number of times (or fold) to ensure our Test data predictions are 100% accurate. Validation is the average result taken from "K" number of times (or fold) the Test data was resampled.
+
+28. Grid Search - TBD

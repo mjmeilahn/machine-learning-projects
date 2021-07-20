@@ -65,4 +65,4 @@
 
 28. Grid Search (Outcome is Model Optimization) - Finds the best model to implement even if new parameters have not been trained early on in the model.
 
-29. XG Boost (Outcome is Higher Accuracy Rate for Regressions or Classification) - TBD
+29. XG Boost - Outcome is Higher Accuracy Rate for Regressions or Classification. Depends on the use case and which algorithm is best suited for prediction.

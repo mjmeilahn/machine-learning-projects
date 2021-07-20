@@ -1,6 +1,8 @@
 # Machine Learning Projects
 
 ### TODO:
+- Add K-Fold Cross Validation & Grid Search on all scripts
+- Add XG Boost on all Classification & Regression scripts to "spot-check" their results just like K-Fold.
 - Remove Hard Coded lines with universal substitutes
 - Create Jupyter Notebook versions of projects
 - Attach screenshots/examples of all charts & visuals
@@ -63,4 +65,4 @@
 
 28. Grid Search (Outcome is Model Optimization) - Finds the best model to implement even if new parameters have not been trained early on in the model.
 
-29. XG Boost - TBD
+29. XG Boost (Outcome is Higher Accuracy Rate for Regressions or Classification) - TBD

@@ -29,7 +29,7 @@ from sklearn.compose import ColumnTransformer
 from sklearn.preprocessing import OneHotEncoder
 ct = ColumnTransformer(transformers=[('encoder', OneHotEncoder(), [3])], remainder='passthrough')
 x = np.array(ct.fit_transform(x))
-# print(x)
+print(x)
 
 # Split data into Training Model & Test Model
 from sklearn.model_selection import train_test_split

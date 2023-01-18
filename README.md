@@ -1,7 +1,6 @@
 # Machine Learning Projects
 
 ### TODO:
-- Add K-Fold Cross Validation & Grid Search on all scripts
 - Add XG Boost on all Classification & Regression scripts to "spot-check" their results just like K-Fold.
 - Remove Hard Coded lines with universal substitutes
 - Create Jupyter Notebook versions of projects

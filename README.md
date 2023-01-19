@@ -1,7 +1,6 @@
 # Machine Learning Projects
 
 ### TODO:
-- Create Jupyter Notebook versions of projects
 
 ## Examples
 

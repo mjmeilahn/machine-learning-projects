@@ -2,7 +2,6 @@
 
 ### TODO:
 - Create Jupyter Notebook versions of projects
-- Attach screenshots/examples of all charts & visuals
 
 ## Examples
 
